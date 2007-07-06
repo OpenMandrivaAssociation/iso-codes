@@ -1,6 +1,6 @@
 %define name iso-codes
-%define version 1.0
-%define release %mkrel 2
+%define version 1.2
+%define release %mkrel 1
 %if %mdkversion >= 200600
 %define pkgconfigdir %_datadir/pkgconfig
 %else
@@ -12,7 +12,6 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://ftp.debian.org/debian/pool/main/i/iso-codes/%{name}_%{version}.orig.tar.bz2
-Source1: http://www.iro.umontreal.ca/translation/teams/PO/nl/iso_639-1.0.nl.po
 License: GPL
 Group: System/Libraries
 #gw FIXME outdated URL
@@ -29,7 +28,6 @@ throughout Mandriva Linux.
 
 %prep
 %setup -q
-cp %SOURCE1 iso_639/nl.po
 
 %build
 ./configure --prefix=%_prefix --libdir=%_libdir
