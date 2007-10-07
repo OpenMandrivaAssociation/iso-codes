@@ -1,5 +1,5 @@
 %define name iso-codes
-%define version 1.4
+%define version 1.5
 %define release %mkrel 1
 %if %mdkversion >= 200600
 %define pkgconfigdir %_datadir/pkgconfig
@@ -11,7 +11,7 @@ Summary: Mapping between ISO country codes and full names
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://ftp.debian.org/debian/pool/main/i/iso-codes/%{name}_%{version}.orig.tar.bz2
+Source0: http://ftp.debian.org/debian/pool/main/i/iso-codes/%{name}_%{version}.orig.tar.gz
 License: GPL
 Group: System/Libraries
 #gw FIXME outdated URL
@@ -41,6 +41,7 @@ rm -rf $RPM_BUILD_ROOT *.lang
 %find_lang iso_3166_2
 %find_lang iso_4217
 %find_lang iso_639_3
+%find_lang iso_15924
 cat iso_*.lang > iso-codes.lang
 
 %clean
