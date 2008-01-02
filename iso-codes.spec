@@ -16,6 +16,7 @@ License: GPL
 Group: System/Libraries
 #gw FIXME outdated URL
 Url: http://people.debian.org/~mckinstry/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-pyxml
 BuildRequires: python
 BuildArch: noarch
