@@ -1,5 +1,5 @@
 %define name iso-codes
-%define version 1.7
+%define version 1.8
 %define release %mkrel 1
 %if %mdkversion >= 200600
 %define pkgconfigdir %_datadir/pkgconfig
