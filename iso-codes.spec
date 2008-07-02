@@ -1,5 +1,5 @@
 %define name iso-codes
-%define version 3.0
+%define version 3.1
 %define release %mkrel 1
 %if %mdkversion >= 200600
 %define pkgconfigdir %_datadir/pkgconfig
@@ -11,11 +11,11 @@ Summary: Mapping between ISO country codes and full names
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: http://ftp.debian.org/debian/pool/main/i/iso-codes/%{name}_%{version}.orig.tar.gz
-License: GPL
+Source0: ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/iso-codes-%{version}.tar.bz2
+Source1: ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/iso-codes-%{version}.tar.bz2.sig
+License: LGPLv2+
 Group: System/Libraries
-#gw FIXME outdated URL
-Url: http://people.debian.org/~mckinstry/
+Url: http://pkg-isocodes.alioth.debian.org/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: python-pyxml
 BuildRequires: python
