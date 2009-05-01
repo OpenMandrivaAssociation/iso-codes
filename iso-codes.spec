@@ -1,5 +1,5 @@
 %define name iso-codes
-%define version 3.7
+%define version 3.9
 %define release %mkrel 1
 %if %mdkversion >= 200600
 %define pkgconfigdir %_datadir/pkgconfig
@@ -51,7 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc README ChangeLog TODO
 %_datadir/xml/iso-codes/
-%_datadir/iso-codes/
 %pkgconfigdir/iso-codes.pc
 
 
