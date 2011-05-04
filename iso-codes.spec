@@ -1,6 +1,6 @@
 %define name iso-codes
 %define version 3.24.2
-%define release %mkrel 1
+%define release %mkrel 2
 %if %mdkversion >= 200600
 %define pkgconfigdir %_datadir/pkgconfig
 %else
