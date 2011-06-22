@@ -1,6 +1,6 @@
 %define name iso-codes
-%define version 3.24.2
-%define release %mkrel 2
+%define version 3.26
+%define release %mkrel 1
 %if %mdkversion >= 200600
 %define pkgconfigdir %_datadir/pkgconfig
 %else
@@ -11,8 +11,8 @@ Summary: Mapping between ISO country codes and full names
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/iso-codes-%{version}.tar.bz2
-Source1: ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/iso-codes-%{version}.tar.bz2.sig
+Source0: ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/iso-codes_%{version}.orig.tar.bz2
+#Source1: ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/iso-codes-%{version}.tar.bz2.sig
 License: LGPLv2+
 Group: System/Libraries
 Url: http://pkg-isocodes.alioth.debian.org/
