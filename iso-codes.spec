@@ -1,5 +1,5 @@
 %define name iso-codes
-%define version 3.29
+%define version 3.30
 %define release %mkrel 1
 %define pkgconfigdir %_datadir/pkgconfig
 
