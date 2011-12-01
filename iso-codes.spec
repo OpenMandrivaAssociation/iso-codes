@@ -30,7 +30,7 @@ throughout Mandriva Linux.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT *.lang
+rm -rf %{buildroot} *.lang
 %makeinstall_std pkgconfigdir=%pkgconfigdir
 %find_lang iso_639
 %find_lang iso_3166
@@ -41,7 +41,7 @@ rm -rf $RPM_BUILD_ROOT *.lang
 cat iso_*.lang > iso-codes.lang
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files -f iso-codes.lang
 %defattr(-,root,root)
