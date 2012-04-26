@@ -1,6 +1,6 @@
 %define name iso-codes
-%define version 3.32
-%define release %mkrel 1
+%define version 3.34
+%define release %mkrel 0
 %define pkgconfigdir %_datadir/pkgconfig
 
 Summary: Mapping between ISO country codes and full names
