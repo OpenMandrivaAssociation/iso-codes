@@ -1,19 +1,16 @@
-%define name iso-codes
-%define version 3.40
-%define release 1
-%define pkgconfigdir %_datadir/pkgconfig
+%define pkgconfigdir %{_datadir}/pkgconfig
 
-Summary: Mapping between ISO country codes and full names
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: http://pkg-isocodes.alioth.debian.org/downloads/%{name}-%{version}.tar.xz
-License: LGPLv2+
-Group: System/Libraries
-Url: http://pkg-isocodes.alioth.debian.org/
-BuildRequires: python-pyxml
-BuildRequires: python
-BuildArch: noarch
+Summary:	Mapping between ISO country codes and full names
+Name:		iso-codes
+Version:	3.40
+Release:	2
+Source0:	http://pkg-isocodes.alioth.debian.org/downloads/%{name}-%{version}.tar.xz
+License:	LGPLv2+
+Group:		System/Libraries
+Url:		http://pkg-isocodes.alioth.debian.org/
+BuildRequires:	python-pyxml
+BuildRequires:	python
+BuildArch:	noarch
 
 %description
 This package aims to provide the list of the country and language (and
@@ -40,5 +37,5 @@ cat iso_*.lang > iso-codes.lang
 
 %files -f iso-codes.lang
 %doc README ChangeLog TODO
-%_datadir/xml/iso-codes/
+%{_datadir}/xml/iso-codes/
 %pkgconfigdir/iso-codes.pc
