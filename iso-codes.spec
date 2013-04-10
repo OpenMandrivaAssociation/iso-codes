@@ -2,8 +2,8 @@
 
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
-Version:	3.40
-Release:	2
+Version:	3.41
+Release:	1
 Source0:	http://pkg-isocodes.alioth.debian.org/downloads/%{name}-%{version}.tar.xz
 License:	LGPLv2+
 Group:		System/Libraries
