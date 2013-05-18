@@ -4,10 +4,10 @@ Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
 Version:	3.41
 Release:	1
-Source0:	http://pkg-isocodes.alioth.debian.org/downloads/%{name}-%{version}.tar.xz
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://pkg-isocodes.alioth.debian.org/
+Source0:	http://pkg-isocodes.alioth.debian.org/downloads/%{name}-%{version}.tar.xz
 BuildRequires:	python-pyxml
 BuildRequires:	python
 BuildArch:	noarch
@@ -21,11 +21,10 @@ throughout Mandriva Linux.
 %setup -q
 
 %build
-./configure --prefix=%_prefix --libdir=%_libdir
+./configure --prefix=%{_prefix} --libdir=%{_libdir}
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT *.lang
 %makeinstall_std pkgconfigdir=%pkgconfigdir
 %find_lang iso_639
 %find_lang iso_3166
@@ -38,4 +37,5 @@ cat iso_*.lang > iso-codes.lang
 %files -f iso-codes.lang
 %doc README ChangeLog TODO
 %{_datadir}/xml/iso-codes/
-%pkgconfigdir/iso-codes.pc
+%{pkgconfigdir}/iso-codes.pc
+
