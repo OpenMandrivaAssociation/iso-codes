@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   iso-codes-3.41.tar.xz: ac652fce28b6270b956623fcdd4be3b0c2cd1354
+sources:
+  iso-codes-3.46.tar.xz: fa28cc4070388548566717dd5c1c96dd9ee0cfba
