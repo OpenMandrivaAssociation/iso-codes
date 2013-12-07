@@ -3,7 +3,7 @@
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
 Version:	3.46
-Release:	4
+Release:	5
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://pkg-isocodes.alioth.debian.org/
