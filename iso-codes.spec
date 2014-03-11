@@ -2,12 +2,13 @@
 
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
-Version:	3.46
-Release:	5
+Version:	3.51
+Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://pkg-isocodes.alioth.debian.org/
 Source0:	http://pkg-isocodes.alioth.debian.org/downloads/%{name}-%{version}.tar.xz
+Source1:	iso-codes.rpmlintrc
 BuildRequires:	python-pyxml
 BuildRequires:	python
 BuildArch:	noarch
