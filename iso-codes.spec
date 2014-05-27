@@ -2,7 +2,7 @@
 
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
-Version:	3.51
+Version:	3.53
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
@@ -26,14 +26,8 @@ throughout Mandriva Linux.
 %make
 
 %install
-%makeinstall_std pkgconfigdir=%pkgconfigdir
-%find_lang iso_639
-%find_lang iso_3166
-%find_lang iso_3166_2
-%find_lang iso_4217
-%find_lang iso_639_3
-%find_lang iso_15924
-cat iso_*.lang > iso-codes.lang
+%makeinstall_std pkgconfigdir=%{pkgconfigdir}
+%find_lang iso_639 iso_3166 iso_3166_2 iso_4217 iso_639_3 iso_639_5 iso_15924 iso-codes.lang
 
 %files -f iso-codes.lang
 %doc README ChangeLog TODO
