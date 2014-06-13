@@ -2,7 +2,7 @@
 
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
-Version:	3.53
+Version:	3.54
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
