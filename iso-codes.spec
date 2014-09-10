@@ -2,8 +2,8 @@
 
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
-Version:	3.54
-Release:	3
+Version:	3.56
+Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://pkg-isocodes.alioth.debian.org/
@@ -16,7 +16,7 @@ BuildArch:	noarch
 %description
 This package aims to provide the list of the country and language (and
 currency) names in one place, rather than repeated in many programs
-throughout Mandriva Linux.
+throughout OpenMandriva Linux.
 
 %prep
 %setup -q
