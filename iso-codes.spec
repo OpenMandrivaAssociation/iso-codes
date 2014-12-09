@@ -9,7 +9,6 @@ Group:		System/Libraries
 Url:		http://pkg-isocodes.alioth.debian.org/
 Source0:	http://pkg-isocodes.alioth.debian.org/downloads/%{name}-%{version}.tar.xz
 Source1:	iso-codes.rpmlintrc
-BuildRequires:	python-pyxml
 BuildRequires:	python
 BuildArch:	noarch
 
