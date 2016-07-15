@@ -2,7 +2,7 @@
 
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
-Version:	3.62
+Version:	3.68
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
@@ -32,4 +32,3 @@ throughout OpenMandriva Linux.
 %doc README ChangeLog TODO
 %{_datadir}/xml/iso-codes/
 %{pkgconfigdir}/iso-codes.pc
-
