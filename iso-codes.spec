@@ -29,6 +29,8 @@ throughout OpenMandriva Linux.
 %find_lang iso_639 iso_3166 iso_3166_2 iso_4217 iso_639_3 iso_639_5 iso_15924 iso-codes.lang
 
 %files -f iso-codes.lang
-%doc README ChangeLog TODO
-%{_datadir}/xml/iso-codes/
+%doc ChangeLog
+%dir %{_datadir}/xml/iso-codes/
+%{_datadir}/xml/iso-codes/*.xml
+%{_datadir}/iso-codes/json/*.json
 %{pkgconfigdir}/iso-codes.pc
