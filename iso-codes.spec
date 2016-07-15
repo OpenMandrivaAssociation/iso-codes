@@ -26,7 +26,22 @@ throughout OpenMandriva Linux.
 
 %install
 %makeinstall_std pkgconfigdir=%{pkgconfigdir}
-%find_lang iso_639 iso_3166 iso_3166_2 iso_4217 iso_639_3 iso_639_5 iso_15924 iso-codes.lang
+
+%find_lang iso_639
+%find_lang iso_3166
+%find_lang iso_3166_2
+%find_lang iso_4217
+%find_lang iso_639_3
+%find_lang iso_15924
+%find_lang iso_639_5
+%find_lang iso_3166-1
+%find_lang iso_3166-2
+%find_lang iso_3166-3
+%find_lang iso_639-2
+%find_lang iso_639-3
+%find_lang iso_639-5
+
+cat iso_*.lang > iso-codes.lang
 
 %files -f iso-codes.lang
 %doc ChangeLog
