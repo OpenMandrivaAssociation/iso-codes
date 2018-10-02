@@ -25,7 +25,7 @@ throughout OpenMandriva Linux.
 %make_build
 
 %install
-%makeins_tall pkgconfigdir=%{pkgconfigdir}
+%make_install pkgconfigdir=%{pkgconfigdir}
 
 %find_lang iso_639
 %find_lang iso_3166
