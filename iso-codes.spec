@@ -3,7 +3,7 @@
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
 Version:	3.77
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://pkg-isocodes.alioth.debian.org/
@@ -18,14 +18,14 @@ currency) names in one place, rather than repeated in many programs
 throughout OpenMandriva Linux.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std pkgconfigdir=%{pkgconfigdir}
+%makeins_tall pkgconfigdir=%{pkgconfigdir}
 
 %find_lang iso_639
 %find_lang iso_3166
