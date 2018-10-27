@@ -3,7 +3,7 @@
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
 Version:	3.77
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://pkg-isocodes.alioth.debian.org/
@@ -16,6 +16,14 @@ BuildArch:	noarch
 This package aims to provide the list of the country and language (and
 currency) names in one place, rather than repeated in many programs
 throughout OpenMandriva Linux.
+
+%package devel
+Summary:	Development files for %{name}
+Group:		Development/Other
+Requires:	%{name} = %{EVRD}
+
+%description devel
+Development files for %{name}.
 
 %prep
 %autosetup -p1
@@ -48,4 +56,6 @@ cat iso_*.lang > iso-codes.lang
 %dir %{_datadir}/xml/iso-codes/
 %{_datadir}/xml/iso-codes/*.xml
 %{_datadir}/iso-codes/json/*.json
+
+%files devel
 %{pkgconfigdir}/iso-codes.pc
