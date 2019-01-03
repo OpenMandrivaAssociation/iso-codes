@@ -52,7 +52,6 @@ Development files for %{name}.
 cat iso_*.lang > iso-codes.lang
 
 %files -f iso-codes.lang
-%doc ChangeLog
 %dir %{_datadir}/xml/iso-codes/
 %{_datadir}/xml/iso-codes/*.xml
 %{_datadir}/iso-codes/json/*.json
