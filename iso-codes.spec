@@ -29,6 +29,8 @@ Development files for %{name}.
 %autosetup -p1
 
 %build
+./bootstrap
+
 %configure
 %make_build
 
