@@ -2,12 +2,12 @@
 
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
-Version:	4.2
+Version:	4.3
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://pkg-isocodes.alioth.debian.org/
-Source0:	http://pkg-isocodes.alioth.debian.org/downloads/%{name}-%{version}.tar.xz
+Url:		https://salsa.debian.org/iso-codes-team/iso-codes
+Source0:	https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/%{name}-%{version}/%{name}-%{name}-%{version}.tar.bz2
 Source1:	iso-codes.rpmlintrc
 BuildRequires:	python
 BuildArch:	noarch
