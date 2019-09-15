@@ -26,7 +26,7 @@ Requires:	%{name} = %{EVRD}
 Development files for %{name}.
 
 %prep
-%autosetup -p1 -qn %{name}-%{name}-%{version}
+%autosetup -p1 -n %{name}-%{name}-%{version}
 
 %build
 ./bootstrap
