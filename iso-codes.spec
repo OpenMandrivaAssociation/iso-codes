@@ -3,7 +3,7 @@
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
 Version:	4.6.0
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		https://salsa.debian.org/iso-codes-team/iso-codes
