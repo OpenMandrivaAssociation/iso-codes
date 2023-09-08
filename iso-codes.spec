@@ -2,12 +2,12 @@
 
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
-Version:	4.6.0
-Release:	2
+Version:	4.15.0
+Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		https://salsa.debian.org/iso-codes-team/iso-codes
-Source0:	https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/%{name}-%{version}/%{name}-%{name}-%{version}.tar.bz2
+Source0:	https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v%{version}/iso-codes-v%{version}.tar.bz2
 Source1:	iso-codes.rpmlintrc
 BuildRequires:	python
 BuildArch:	noarch
@@ -26,7 +26,7 @@ Requires:	%{name} = %{EVRD}
 Development files for %{name}.
 
 %prep
-%autosetup -p1 -n %{name}-%{name}-%{version}
+%autosetup -p1 -n %{name}-v%{version}
 
 %build
 ./bootstrap
