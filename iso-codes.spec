@@ -9,6 +9,11 @@ Group:		System/Libraries
 Url:		https://salsa.debian.org/iso-codes-team/iso-codes
 Source0:	https://salsa.debian.org/iso-codes-team/iso-codes/-/archive/v%{version}/iso-codes-v%{version}.tar.bz2
 Source1:	iso-codes.rpmlintrc
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	python
 BuildArch:	noarch
 
