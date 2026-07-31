@@ -2,7 +2,7 @@
 
 Summary:	Mapping between ISO country codes and full names
 Name:		iso-codes
-Version:	4.18.0
+Version:	4.20.1
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
@@ -31,7 +31,7 @@ Requires:	%{name} = %{EVRD}
 Development files for %{name}.
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}
+%autosetup -p1 -n iso-codes-v4.20.1
 
 %build
 ./bootstrap
